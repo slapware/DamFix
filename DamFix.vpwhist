@@ -1,0 +1,28 @@
+[Global]
+CurrentProject=DamFix.vpj
+[ActiveConfig]
+DamFix.vpj=,Release|Win32
+[ProjectDates]
+DamFix.vcproj=20050407114910674
+[TreeExpansion2]
++ DamFix.vcproj
+scroll:0
+[State]
+SCREEN: 1024 768 154 154 768 537 0 0 M 0 0 0 0 951 582
+CWD: ..\DamFix
+BUFFER: BN="DamFixDlg.cpp"
+BI: MA=1 74 1  TABS=1 5  WWS=1 IWT=0 ST=0 IN=2 BW=0 US=32000 RO=0 SE=1 SN=0 BIN=0 MN=C	HM=0 MF=616 TL=0 MLL=0 ASE=0 LNL=6 LCF=0 CAPS=0 E=0 ESBU2=-1
+VIEW: LN=.10082 CL=1 LE=0 CX=0 CY=16 WI=5 BI=5 HT=0 HN=0 HF=0 HC=4
+WINDOW: 22 22 563 327 -1 -1 M  WF=0 WT=1 "OEM Fixed Font,10,0,1"
+BUFFER: BN="DamFixDlg.cpp"
+VIEW: LN=.11562 CL=5 LE=0 CX=4 CY=44 WI=89 BI=5 HT=0 HN=0 HF=0 HC=4
+FILEHIST: 9
+C:\Documents and Settings\stephen lapierre\My Documents\My Visual SlickEdit Config\java.als
+suoci.cpp
+suoci.h
+Debug\errors_08-23-04-16-29-27.xml
+..\image_trx\image_trxDlg.cpp
+..\..\lib\boost_1_32_0\libs\regex\example\snippets\captures_example.cpp
+DamFixDlg.h
+\vslick\macros\asciitab
+DamFixDlg.cpp

@@ -1,0 +1,61 @@
+<HTML>
+	<HEAD>
+		<TITLE></TITLE>
+		<META NAME="GENERATOR" Content="Microsoft Visual Studio .NET 7.1">
+	</HEAD>
+	<BODY bgColor="honeydew">
+		<P><H2 align="center">DamFix Application Operation.</H2>
+		<P></P>
+		<P>The purpose of the application is to alter the Telescope database to reflect 
+			changes in the physical asset location&nbsp;represented by&nbsp;filebroker 
+			location, filebroker name, disk label or server name within the <STRONG><EM>DOC_RENDITIONS</EM></STRONG>
+			table for the <STRONG><EM>FILE_LOCATION</EM></STRONG> and <EM><STRONG>LONG_NAME</STRONG></EM>
+			column fields.
+		</P>
+		<P>The main dialog window looks like this;</P>
+		<P align="center"><IMG alt="damfix.jpg" src="damfix.jpg" align="middle"></P>
+		<P>There are five (5) sections within the dialog, File Location, Long Name, Root 
+			Folder, Server and Database. Each section will be covered seperatley.</P>
+		<P><STRONG><FONT size="4">File Location.<BR>
+				</FONT></STRONG>This section effect the <STRONG><EM>FILE_LOCATION</EM></STRONG>
+			column within the <EM><STRONG>DOC_RENDITIONS</STRONG></EM> table of Telescope. 
+			The "<EM>Label</EM>" entries refer to Disk Label, and "<EM>FB</EM>" entries 
+			refer to File Broker name. The <EM>Old Label</EM> and <EM>Old FB</EM> are used 
+			for location of records, and are only updated if new entries are provided under <EM>
+				New Label</EM> or <EM>New FB</EM>. These can be updated independatley of 
+			each other if required. The <EM><STRONG>FILE_LOCATION</STRONG></EM> column is 
+			used by the filebroker to locate and download the asset to the user. If this 
+			field is incorrect the asset will be <FONT color="#ff0066"><U><STRONG>unavailable for 
+						download</STRONG></U></FONT>, only visable as metadata and 
+			thumbnail entry within Telescope. If assets need to be moved to a different 
+			physical location for space considerations, this field will have to be modified 
+			to enable assets to be available from the new location.</P>
+		<P><STRONG><FONT size="4">Long Name.<BR>
+				</FONT></STRONG>This section effect the LONG_NAME column within the <EM><STRONG>DOC_RENDITIONS</STRONG></EM>
+			table of Telescope. The "<EM>Label</EM>" entries refer to Disk Label, and "<EM>FB</EM>" 
+			entries refer to File Broker name. The <EM>Old Label</EM> and <EM>Old FB</EM> are 
+			used for location of records, and are only updated if new entries are provided 
+			under <EM>New Label</EM> or <EM>New FB</EM>. These can be updated independatley 
+			of each other if required. The <EM><STRONG>LONG_NAME</STRONG></EM> column is 
+			used for visual presentation of the asset location to the end user, and will 
+			not have any effect on the availability of the asset if not set to the correct 
+			location. It will however cause confusion to some users and any IT staff using 
+			this as a reference, so keeping in sync with the correct location is advised.</P>
+		<P><STRONG><FONT size="4">Root Folder.</FONT></STRONG><BR>
+			This is an optional field. It only needs to be used if a <EM>single</EM> top 
+			level folder <EM>under</EM> a filebroker is desired to be moved, and specifies 
+			the folder name. In the example image above only the Fall season tree would be 
+			moved. This is a special use condition that is not a normal operation.
+		</P>
+		<P><STRONG><FONT size="4">Server.</FONT></STRONG><BR>
+			This is an optional field. It only is used to change the server of the file 
+			store that the asset resides on. Typically only used on the development system 
+			to reassign production assets.</P>
+		<P><STRONG><FONT size="4">Database.<BR>
+				</FONT></STRONG>Requred field. This dropdown will present a list of 
+			registered TNS names from the oracle <EM>tnsnames.ora</EM> file on the machine 
+			that is running the application. Selection of the correct database 
+			configuration is required, and also allows for updates to be run from a remote 
+			machine with appropiate configuration settings.</P>
+	</BODY>
+</HTML>

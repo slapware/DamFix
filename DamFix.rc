@@ -1,0 +1,255 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\DamFix.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\DamFix.ico"
+IDI_DAM                 ICON                    "res\\DamLogo.ico"
+IDI_SLAP                ICON                    "res\\Slap.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "About DamFix"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDI_SLAP,IDC_STATIC,11,17,20,20
+    LTEXT           "DamFix Version 3.5",IDC_STATIC,37,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2005",IDC_STATIC,37,21,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,16,WS_GROUP
+    LTEXT           "Stephen La Pierre",IDC_STATIC,37,32,58,8
+    ICON            IDI_DAM,IDC_STATIC,192,28,20,20
+END
+
+IDD_DAMFIX_DIALOG DIALOGEX 0, 0, 382, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DamFix"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,318,6,50,12
+    PUSHBUTTON      "Cancel",IDCANCEL,318,24,50,11
+    GROUPBOX        "File Location",IDC_STATIC,12,12,252,60
+    EDITTEXT        IDC_OLD_FL_LABEL,66,24,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OLD_FL_FB,180,24,74,14,ES_AUTOHSCROLL
+    LTEXT           "Old Label",IDC_STATIC,24,24,36,8
+    LTEXT           "Old FB",IDC_STATIC,150,24,22,8
+    EDITTEXT        IDC_NEW_FL_LABEL,66,48,78,14,ES_AUTOHSCROLL
+    LTEXT           "New Label",IDC_STATIC,24,48,34,8
+    EDITTEXT        IDC_NEW_FL_FB,180,48,72,14,ES_AUTOHSCROLL
+    LTEXT           "New FB",IDC_STATIC,150,48,25,8
+    GROUPBOX        "Long Name",IDC_STATIC,12,78,252,60
+    EDITTEXT        IDC_OLD_LN_LABEL,66,90,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OLD_LN_FB,180,90,72,14,ES_AUTOHSCROLL
+    LTEXT           "Old Label",IDC_STATIC,24,90,30,8
+    LTEXT           "Old FB",IDC_STATIC,150,90,22,8
+    EDITTEXT        IDC_NEW_LN_LABEL,66,114,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NEW_LN_FB,180,114,72,14,ES_AUTOHSCROLL
+    LTEXT           "New FB",IDC_STATIC,150,114,25,8
+    LTEXT           "New Label",IDC_STATIC,24,114,34,8
+    GROUPBOX        "Database",IDC_STATIC,270,108,102,30
+    COMBOBOX        IDC_COMBO1,276,120,90,49,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Server",IDC_STATIC,270,72,102,34
+    EDITTEXT        IDC_SERVER,276,84,77,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    ICON            IDI_DAM,IDC_STATIC,276,12,21,20
+    GROUPBOX        "Root Folder",IDC_STATIC,270,36,102,34
+    EDITTEXT        IDC_FOLDER,276,48,84,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "S",IDC_SVRCHANGE,356,84,12,14
+END
+
+IDD_SERVERNAME DIALOGEX 0, 0, 213, 73
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "NEW Server Name"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,156,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,156,24,50,14
+    EDITTEXT        IDC_CURSERVER,18,18,66,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "CHANGE Server Name",IDC_STATIC,11,8,133,54
+    EDITTEXT        IDC_NEWSERVER,18,42,66,14,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Current Name",IDC_STATIC,90,18,48,8
+    LTEXT           "NEW Name",IDC_STATIC,90,42,48,8
+    ICON            IDI_SLAP,IDC_STATIC,168,42,20,20
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,5,0,1
+ PRODUCTVERSION 3,5,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "Stuff that works !!!!"
+            VALUE "CompanyName", "SlapWare"
+            VALUE "FileDescription", "Original SlapWare"
+            VALUE "FileVersion", "3.5.0.1"
+            VALUE "InternalName", "DamFix.exe"
+            VALUE "LegalCopyright", "TODO: (c) SlapWare.  All rights reserved."
+            VALUE "OriginalFilename", "DamFix.exe"
+            VALUE "ProductName", "Telescope DB Move utility"
+            VALUE "ProductVersion", "3.5.0.1"
+            VALUE "SpecialBuild", "Harper Collins"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DAMFIX_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 375
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_SERVERNAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About DamFix..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\DamFix.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
